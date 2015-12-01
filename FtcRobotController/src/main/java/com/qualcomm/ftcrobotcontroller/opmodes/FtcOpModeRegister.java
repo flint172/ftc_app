@@ -33,6 +33,7 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpModeManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeRegister;
+import com.todd.opmodes.BasicOpMode;
 
 /**
  * Register Op Modes
@@ -55,13 +56,14 @@ public class FtcOpModeRegister implements OpModeRegister {
      * If two or more op modes are registered with the same name, the app will display an error.
      */
 
-    manager.register("NullOp", NullOp.class);
+   // manager.register("NullOp", NullOp.class);
 
     //manager.register("MatrixK9TeleOp", MatrixK9TeleOp.class);
-    manager.register("K9TeleOp", K9TeleOp.class);
-    manager.register("K9Line", K9Line.class);
-    manager.register ("PushBotAuto", PushBotAuto.class);
-    manager.register ("PushBotManual", PushBotManual.class);
+   // manager.register("K9TeleOp", K9TeleOp.class);
+   // manager.register("K9Line", K9Line.class);
+   // manager.register ("PushBotAuto", PushBotAuto.class);
+   // manager.register ("PushBotManual", PushBotManual.class);
+    manager.register("BasicOpT", BasicOpMode.class);
 
 
 
