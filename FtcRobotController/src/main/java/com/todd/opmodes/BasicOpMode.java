@@ -69,14 +69,15 @@ public class BasicOpMode extends OpMode {
     }
 
     double softScaleInput(double dVal){
-        double[] scaleArray = { 0.0, 0.15, 0.20, 0.25, 0.30, 0.35, 0.35 };
+        double[] scaleArray = {0.0,0.05,0.05,0.06,0.06,0.07,0.07,0.08,0.08,0.09,0.09,0.10,0.10,0.11,
+                0.11,0.12,0.12,0.13,0.13,0.14,0.14,0.15,0.15};
 
-        int index = (int)(dVal * 6.0);
+        int index = (int)(dVal * 22.0);
         if(index < 0){
             index = -index;
         }
 
-        if(index > 16) index = 5;
+        if(index > 22) index = 22;
         // get value from the array.
         double dScale = 0.0;
         if (dVal < 0) {
